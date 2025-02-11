@@ -1,135 +1,211 @@
 /* ===== ESTILOS GERAIS ===== */
 body {
-    font-family: 'Poppins', sans-serif; /* Define a fonte padrão do site */
-    background-color: #f4f4f4; /* Define a cor de fundo da página */
-    margin: 0; /* Remove margens externas padrão do body */
-    padding: 0; /* Remove padding padrão do body */
-    scroll-behavior: smooth; /* Suaviza a rolagem ao navegar entre seções */
-    display: flex; /* Define o body como um contêiner flexível */
-    flex-direction: column; /* Organiza os elementos em coluna */
-    min-height: 100vh; /* Garante que o body ocupe pelo menos toda a altura da tela */
+    font-family: 'Poppins', sans-serif;
+    /* Define a fonte padrão do site */
+    background-color: #f4f4f4;
+    /* Define a cor de fundo da página */
+    margin: 0;
+    /* Remove margens externas padrão do body */
+    padding: 0;
+    /* Remove padding padrão do body */
+    scroll-behavior: smooth;
+    /* Suaviza a rolagem ao navegar entre seções */
+    display: flex;
+    /* Define o body como um contêiner flexível */
+    flex-direction: column;
+    /* Organiza os elementos em coluna */
+    min-height: 100vh;
+    /* Garante que o body ocupe pelo menos toda a altura da tela */
 }
 
 /* ===== CABEÇALHO ===== */
 header {
-    background-color: #333; /* Define a cor de fundo do cabeçalho */
-    padding: 2px 0; /* Adiciona espaçamento vertical ao cabeçalho */
-    position: sticky; /* Mantém o cabeçalho fixo no topo ao rolar a página */
-    top: 0; /* Fixa o cabeçalho no topo da página */
-    width: 100%; /* Garante que o cabeçalho ocupe toda a largura */
-    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+    background-color: #333;
+    /* Define a cor de fundo do cabeçalho */
+    padding: 2px 0;
+    /* Adiciona espaçamento vertical ao cabeçalho */
+    position: sticky;
+    /* Mantém o cabeçalho fixo no topo ao rolar a página */
+    top: 0;
+    /* Fixa o cabeçalho no topo da página */
+    width: 100%;
+    /* Garante que o cabeçalho ocupe toda a largura */
+    z-index: 1000;
+    /* Garante que o cabeçalho fique acima de outros elementos */
 }
 
 .logo a {
-    color: #fff; /* Define a cor do texto do logo */
+    color: #fff;
+    /* Define a cor do texto do logo */
     text-decoration: none;
-    font-size: 24px; /* Define o tamanho da fonte do logo */
-    font-weight: bold; /* Deixa o texto do logo em negrito */
+    font-size: 24px;
+    /* Define o tamanho da fonte do logo */
+    font-weight: bold;
+    /* Deixa o texto do logo em negrito */
 }
 
 /* ===== NAVEGAÇÃO ===== */
 nav {
-    display: flex; /* Define a navegação como flexível para melhor alinhamento */
-    align-items: center; /* Alinha os itens da navegação verticalmente */
-    padding: 0 10px; /* Adiciona espaçamento lateral à navegação */
+    display: flex;
+    /* Define a navegação como flexível para melhor alinhamento */
+    align-items: center;
+    /* Alinha os itens da navegação verticalmente */
+    padding: 0 10px;
+    /* Adiciona espaçamento lateral à navegação */
 }
 
 .nav-links {
-    list-style: none; /* Remove os marcadores padrão da lista */
-    display: flex; /* Exibe os itens da lista em linha */
-    gap: 20px; /* Define o espaçamento entre os itens */
-    padding: 0; /* Remove o padding padrão */
-    margin: 0 15px; /* Define margens laterais */
+    list-style: none;
+    /* Remove os marcadores padrão da lista */
+    display: flex;
+    /* Exibe os itens da lista em linha */
+    gap: 20px;
+    /* Define o espaçamento entre os itens */
+    padding: 0;
+    /* Remove o padding padrão */
+    margin: 0 15px;
+    /* Define margens laterais */
 }
 
 .nav-links li {
-    display: inline; /* Mantém os itens da lista em linha */
+    display: inline;
+    /* Mantém os itens da lista em linha */
 }
 
 .nav-links a {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: white; /* Define a cor do texto dos links */
-    padding: 10px 15px; /* Adiciona espaçamento interno aos links */
-    border-radius: 5px; /* Adiciona bordas arredondadas */
-    transition: background-color 0.3s; /* Suaviza a transição ao mudar a cor de fundo */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    color: white;
+    /* Define a cor do texto dos links */
+    padding: 10px 15px;
+    /* Adiciona espaçamento interno aos links */
+    border-radius: 5px;
+    /* Adiciona bordas arredondadas */
+    transition: background-color 0.3s;
+    /* Suaviza a transição ao mudar a cor de fundo */
 }
 
 .nav-links a:hover {
-    background-color: #555; /* Muda a cor de fundo ao passar o mouse */
+    background-color: #555;
+    /* Muda a cor de fundo ao passar o mouse */
 }
 
 .menu-toggle {
-    display: none; /* Oculta o ícone do menu hamburguer por padrão */
-    font-size: 24px; /* Define o tamanho do ícone */
-    color: white; /* Define a cor do ícone */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    display: none;
+    /* Oculta o ícone do menu hamburguer por padrão */
+    font-size: 24px;
+    /* Define o tamanho do ícone */
+    color: white;
+    /* Define a cor do ícone */
+    cursor: pointer;
+    /* Muda o cursor para indicar que é clicável */
 }
 
 /* ===== SEÇÕES ===== */
 section {
-    padding: 60px 20px; /* Adiciona espaçamento interno nas seções */
-    text-align: center; /* Centraliza o conteúdo */
-    min-height: 50vh; /* Define a altura mínima de cada seção */
+    padding: 30px 20px;
+    /* Adiciona espaçamento interno nas seções */
+    text-align: center;
+    /* Centraliza o conteúdo */
+    min-height: 10vh;
+    /* Define a altura mínima de cada seção */
+    max-height: 50vh;
 }
 
-section p{
-    text-align: justify; /* Torna o texto dentro de cada seção justificado*/
-} 
+section h3{
+    font-size: 28px;
+}
+
+section p {
+    text-align: justify;
+    /* Torna o texto dentro de cada seção justificado*/
+}
 
 #inicio {
-    background-color: #f4f4f4; /* Define a cor de fundo da seção "Início" */
+    background-color: #f4f4f4;
+    /* Define a cor de fundo da seção "Início" */
 }
 
 #sobre {
-    background-color: #e2e2e2; /* Define a cor de fundo da seção "Sobre" */
+    background-color: #e2e2e2;
+    /* Define a cor de fundo da seção "Sobre" */
 }
 
 #servicos {
-    background-color: #d1d1d1; /* Define a cor de fundo da seção "Serviços" */
+    background-color: #d1d1d1;
+    /* Define a cor de fundo da seção "Serviços" */
 }
 
 #contato {
-    background-color: #c0c0c0; /* Define a cor de fundo da seção "Contato" */
+    background-color: #c0c0c0;
+    /* Define a cor de fundo da seção "Contato" */
 }
 
 /* ===== RODAPÉ ===== */
 footer {
-    background-color: #333; /* Define a cor de fundo do rodapé */
-    color: white; /* Define a cor do texto */
-    text-align: center; /* Centraliza o texto */
-    padding: 5px; /* Adiciona espaçamento interno */
-    margin-top: auto; /* Mantém o rodapé na parte inferior da página */
+    background-color: #333;
+    /* Define a cor de fundo do rodapé */
+    color: white;
+    /* Define a cor do texto */
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 5px;
+    /* Adiciona espaçamento interno */
+    margin-top: auto;
+    /* Mantém o rodapé na parte inferior da página */
+}
+
+footer p {
+    text-align: justify;
+    margin-left: 20px;
 }
 
 /* ===== RESPONSIVIDADE ===== */
-@media (max-width: 768px) { /* Aplica estilos para telas menores que 768px */
+@media (max-width: 768px) {
+
+    /* Aplica estilos para telas menores que 768px */
     nav {
-        flex-direction: unset; /* Mantém a direção padrão da flexbox */
-        align-items: center; /* Alinha os itens no centro */
+        flex-direction: unset;
+        /* Mantém a direção padrão da flexbox */
+        align-items: center;
+        /* Alinha os itens no centro */
     }
 
     .nav-links {
-        display: none; /* Oculta os links de navegação por padrão */
-        flex-direction: column; /* Organiza os links em coluna */
-        width: 100%; /* Ocupa toda a largura */
-        text-align: left; /* Alinha os links à esquerda */
-        background: #333; /* Define a cor de fundo */
-        padding: 10px; /* Adiciona espaçamento interno */
-        position: absolute; /* Permite sobrepor outros elementos */
-        left: 0; /* Alinha os links à esquerda */
-        top: 60px; /* Define a posição abaixo do cabeçalho */
+        display: none;
+        /* Oculta os links de navegação por padrão */
+        flex-direction: column;
+        /* Organiza os links em coluna */
+        width: 100%;
+        /* Ocupa toda a largura */
+        text-align: left;
+        /* Alinha os links à esquerda */
+        background: #333;
+        /* Define a cor de fundo */
+        padding: 10px;
+        /* Adiciona espaçamento interno */
+        position: absolute;
+        /* Permite sobrepor outros elementos */
+        left: 0;
+        /* Alinha os links à esquerda */
+        top: 60px;
+        /* Define a posição abaixo do cabeçalho */
     }
 
     .nav-links.active {
-        display: flex; /* Exibe os links ao ativar o menu */
+        display: flex;
+        /* Exibe os links ao ativar o menu */
     }
 
     .menu-toggle {
-        display: block; /* Exibe o ícone do menu hamburguer */
-        padding: 10px; /* Adiciona espaçamento interno */
+        display: block;
+        /* Exibe o ícone do menu hamburguer */
+        padding: 10px;
+        /* Adiciona espaçamento interno */
     }
 
     .logo h1 a {
-        color: white; /* Define a cor do texto do logo */
+        color: white;
+        /* Define a cor do texto do logo */
     }
 }

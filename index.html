@@ -27,31 +27,34 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <section id="inicio">
-            <h1>Bem-vindo à Nossa Landing Page</h1>
+            <h2>Bem-vindo à Nossa Landing Page</h2>
             <p>Esta é a seção inicial da página.</p>
         </section>
 
         <section id="servicos" aria-labelledby="titulo-servicos">
-            <h2 id="titulo-servicos">Serviços</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <h3 id="titulo-servicos">Serviços</h3>
+            <p>Aliquam id augue vel arcu interdum luctus. Curabitur commodo vehicula nibh non euismod. Nam nec est velaugue elementum auctor. Morbi ullamcorper, mauris eu sagittis ornare, urna velit accumsan enim, utornare lorem ante et ex. Curabitur iaculis augue sed mi tristique congue. Nullam ut eros at nisi pellentesque tristique nec id elit.
+                Integer nec mi vel tellus dapibus aliquam quis vel erat. Donec ultrices nulla quis augue suscipit, sed ultrices quam aliquet.</p>
         </section>
 
         <section id="sobre" aria-labelledby="titulo-sobre">
-            <h2 id="titulo-sobre">Sobre</h2>
+            <h3 id="titulo-sobre">Sobre</h3>
             <p>Sed in enim maximus, scelerisque mi sed, pulvinar diam...</p>
         </section>
 
         <section id="contato" aria-labelledby="titulo-contato">
-            <h2 id="titulo-contato">Contato</h2>
+            <h3 id="titulo-contato">Contato</h3>
             <p>Aliquam id augue vel arcu interdum luctus...</p>
         </section>
     </main>
-    
+
     <footer>
-        <p>&copy; 2025 Nome do Site</p>
+        <div class="footer_container">
+            <p>Copyright &copy; 2025 | Nome da empresa | Developed by RHCC </p>
+        </div>
     </footer>
 
     <script>
@@ -59,7 +62,7 @@
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
         }
-        
+
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 document.querySelector('.nav-links').classList.remove('active');
