@@ -1,0 +1,83 @@
+/* Define estilos para o elemento <body> */
+body {
+    font-family: 'Poppins', sans-serif; /* Define a fonte do texto como Arial, com fallback para sans-serif */
+    background-color: #f4f4f4; /* Define a cor de fundo da página como um cinza claro */
+    margin: 0; /* Remove margens padrão do body */
+    padding: 0; /* Remove preenchimento padrão do body */
+   flex-direction: column;
+   width: 100%;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333; /* Define a cor de fundo do cabeçalho como um cinza escuro */
+    padding: 2px 0; /* Adiciona um preenchimento de 10px no topo e na base do cabeçalho */
+    position: sticky; /* Fixa o cabeçalho no topo da página ao rolar */
+    top: 0; /* Define que o cabeçalho ficará no topo da página */
+    width: 100%;
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+.logo a{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Seções */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    min-height: 50vh;
+}
+
+#inicio {
+    background-color: #f4f4f4; /* Define a cor de fundo como cinza claro */
+}
+
+#sobre {
+    background-color: #e2e2e2; /* Define a cor de fundo como um cinza mais claro */
+}
+
+#servicos {
+    background-color: #d1d1d1; /* Define a cor de fundo como um cinza médio */
+}
+
+#contato {
+    background-color: #c0c0c0; /* Define a cor de fundo como um cinza mais escuro */
+}
+
+/* Rodapé*/
+footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 10px;
+    padding: 5px; /* Espaçamento interno */
+    bottom: 0;
+    margin-top: auto; /* Para fixar no fundo */
+}
+
+/* Adicionando estilos para maior acessibilidade e responsividade */
+@media (max-width: 768px) {
+    .nav-links {
+        display: block;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 60px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        padding: 10px;
+    }
+}

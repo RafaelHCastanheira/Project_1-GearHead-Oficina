@@ -1,0 +1,96 @@
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+}
+
+/* Botão de Login */
+.login-button-container{
+    margin-left: auto;
+}
+
+.login-button {
+    background-color: #ff9900;
+    color: white;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.login-button:hover {
+    background-color: #e68a00;
+}
+
+.logo h1 a{
+    text-decoration: none;
+    color: white; /* Corrige a cor do texto */
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Menu Mobile */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: unset;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+        background: #333;
+        padding: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .login-button-container {
+        width: 100%;
+        text-align: right;
+        margin: 10px 0;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+}
