@@ -4,13 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sua descrição aqui"> <!-- Adiciona uma descrição para SEO -->
-    <meta name="keywords" content="Empresa, serviços"> <!-- Melhora a indexação da página -->
-    <meta name="author" content="Seu Nome ou Empresa"><!-- Adicionar nome da empresa/organização -->
+    <meta name="description" content="Sua descrição aqui"> <!-- Descrição para SEO -->
+    <meta name="keywords" content="Empresa, serviços"> <!-- Melhora a indexação -->
+    <meta name="author" content="Seu Nome ou Empresa"> <!-- Nome da empresa -->
     <title>Empresa</title>
     <link rel="stylesheet" href="CSS/global_style.css">
-    <link rel="stylesheet" href="CSS/nav_style.css">
-    <link rel="stylesheet" href="CSS/index_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -27,12 +25,9 @@
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
-            <div class="login-button-container">
-                <a href="page/login.html" class="login-button">Login</a>
-            </div>
-
         </nav>
     </header>
+    
     <main>
         <section id="inicio">
             <h1>Bem-vindo à Nossa Landing Page</h1>
@@ -41,52 +36,20 @@
 
         <section id="servicos" aria-labelledby="titulo-servicos">
             <h2 id="titulo-servicos">Serviços</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet est eget nibh aliquam maximus
-                vitae in risus. Vestibulum id risus congue leo venenatis varius. Maecenas interdum mauris nec erat
-                mollis ultrices. Mauris laoreet felis eu elementum tincidunt. Nunc scelerisque purus et purus euismod
-                dapibus.
-
-                Phasellus aliquam, nulla in volutpat faucibus, elit arcu dictum enim, sed rutrum massa dolor id ante.
-                Aliquam mattis dapibus eros vitae aliquet. Phasellus et nisi sed sem laoreet rhoncus. Cras tellus augue,
-                lobortis vel tempus quis, pharetra quis purus. Sed auctor neque eu metus sollicitudin, eu pretium dui
-                consectetur.
-
-                Suspendisse eget tortor eros. Ut congue tempor volutpat. Nullam egestas sagittis volutpat. Proin porta,
-                est aliquam cursus auctor, justo orci bibendum enim, placerat tincidunt lectus dolor ac tellus. Quisque
-                aliquet justo nec vehicula tempus. Cras eget elementum dolor, eget tempus dui. Nam in condimentum metus.
-                Phasellus dignissim efficitur condimentum.
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
         </section>
 
         <section id="sobre" aria-labelledby="titulo-sobre">
             <h2 id="titulo-sobre">Sobre</h2>
-            <p>
-                Sed in enim maximus, scelerisque mi sed, pulvinar diam. Suspendisse eu tempor lacus. Integer a enim
-                nisl.
-                Morbi gravida luctus malesuada. In hac habitasse platea dictumst. Phasellus vel nulla et neque feugiat
-                fermentum nec quis ipsum.
-                Praesent laoreet augue sit amet ligula blandit laoreet. Nam lacinia, tortor sed vestibulum mollis, dolor
-                nunc ultrices tellus, eget iaculis elit est a justo.
-            </p>
+            <p>Sed in enim maximus, scelerisque mi sed, pulvinar diam...</p>
         </section>
 
         <section id="contato" aria-labelledby="titulo-contato">
             <h2 id="titulo-contato">Contato</h2>
-            <p>
-                Aliquam id augue vel arcu interdum luctus. Curabitur commodo vehicula nibh non euismod. Nam nec est vel
-                augue elementum auctor. Morbi ullamcorper, mauris eu sagittis ornare, urna velit accumsan enim, ut
-                ornare lorem ante et ex. Curabitur iaculis augue sed mi tristique congue. Nullam ut eros at nisi
-                pellentesque
-                tristique nec id elit.
-                Integer nec mi vel tellus dapibus aliquam quis vel erat. Donec ultrices nulla quis augue suscipit, sed
-                ultrices quam aliquet.
-                Maecenas non tellus rhoncus neque volutpat vulputate. Nullam laoreet, ex nec sollicitudin interdum,
-                libero eros ultrices metus, a consequat ex tortor ut tortor. Duis interdum elit eu ante suscipit
-                ultricies. Curabitur non tellus elit. Duis in viverra felis, sit amet convallis nunc.
-            </p>
+            <p>Aliquam id augue vel arcu interdum luctus...</p>
         </section>
     </main>
+    
     <footer>
         <p>&copy; 2025 Nome do Site</p>
     </footer>
@@ -96,7 +59,7 @@
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
         }
-        // Melhor prática: Adiciona evento para fechar menu quando clicar em um link
+        
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 document.querySelector('.nav-links').classList.remove('active');
