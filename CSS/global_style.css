@@ -109,7 +109,7 @@ section {
     /* Centraliza o conteúdo */
     min-height: 10vh;
     /* Define a altura mínima de cada seção */
-    max-height: 50vh;
+    max-height: 100vh;
 }
 
 section h3{
