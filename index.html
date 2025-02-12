@@ -7,8 +7,9 @@
     <meta name="description" content="Sua descrição aqui"> <!-- Descrição para SEO -->
     <meta name="keywords" content="Mecãnica, serviços, manutenção"> <!-- Melhora a indexação -->
     <meta name="author" content="Seu Nome ou Empresa"> <!-- Nome da empresa -->
-    <title>Mecânica</title>
+    <title>Oficina</title>
     <link rel="stylesheet" href="CSS/global_style.css">
+    <script src="JS/carousel.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -17,7 +18,7 @@
     <header>
         <nav>
             <div class="logo">
-                <h1><a href="#inicio">Mecânica</a></h1>
+                <h1><a href="#inicio">Oficina<br>Mecânica</a></h1>
             </div>
             <div class="menu-toggle" onclick="toggleMenu()">☰</div>
             <ul class="nav-links">
@@ -37,16 +38,58 @@
 
         <section id="servicos" aria-labelledby="titulo-servicos">
             <h3 id="titulo-servicos">Serviços</h3>
-            <div>
-                <h4>Serviços</h4>
-                <p>Aliquam id augue vel arcu interdum luctus. Curabitur commodo vehicula nibh non euismod. Nam nec est velaugue elementum auctor. Morbi ullamcorper, mauris eu sagittis ornare, urna velit accumsan enim, utornare lorem ante et ex. Curabitur iaculis augue sed mi tristique congue. Nullam ut eros at nisi pellentesque tristique nec id elit.
-                Integer nec mi vel tellus dapibus aliquam quis vel erat. Donec ultrices nulla quis augue suscipit, sed ultrices quam aliquet.</p>
-        
-            </div>
-            <div>
-                <h4>Serviços</h4>
-                <p>Aliquam id augue vel arcu interdum luctus. Curabitur commodo vehicula nibh non euismod. Nam nec est velaugue elementum auctor. Morbi ullamcorper, mauris eu sagittis ornare, urna velit accumsan enim, utornare lorem ante et ex. Curabitur iaculis augue sed mi tristique congue. Nullam ut eros at nisi pellentesque tristique nec id elit.
-                Integer nec mi vel tellus dapibus aliquam quis vel erat. Donec ultrices nulla quis augue suscipit, sed ultrices quam aliquet.</p>
+
+            <div class="carousel">
+                <div class="slide active">
+                    <h4>Serviços</h4>
+                    <p>Aliquam id augue vel arcu interdum luctus. Curabitur commodo vehicula nibh non euismod. Nam nec
+                        est velaugue elementum auctor. Morbi ullamcorper, mauris eu sagittis ornare, urna velit accumsan
+                        enim, utornare lorem ante et ex. Curabitur iaculis augue sed mi tristique congue. Nullam ut eros
+                        at nisi pellentesque tristique nec id elit.
+                        Integer nec mi vel tellus dapibus aliquam quis vel erat. Donec ultrices nulla quis augue
+                        suscipit, sed ultrices quam aliquet.</p>
+
+                </div>
+                <div class="slide">
+                    <h4>Serviços</h4>
+                    <p>Aliquam id augue vel arcu interdum luctus. Curabitur commodo vehicula nibh non euismod. Nam nec
+                        est velaugue elementum auctor. Morbi ullamcorper, mauris eu sagittis ornare, urna velit accumsan
+                        enim, utornare lorem ante et ex. Curabitur iaculis augue sed mi tristique congue. Nullam ut eros
+                        at nisi pellentesque tristique nec id elit.
+                        Integer nec mi vel tellus dapibus aliquam quis vel erat. Donec ultrices nulla quis augue
+                        suscipit, sed ultrices quam aliquet.</p>
+                </div>
+                
+                <div class="slide">
+                    <h4>Serviços</h4>
+                    <p>Aliquam id augue vel arcu interdum luctus. Curabitur commodo vehicula nibh non euismod. Nam nec
+                        est velaugue elementum auctor. Morbi ullamcorper, mauris eu sagittis ornare, urna velit accumsan
+                        enim, utornare lorem ante et ex. Curabitur iaculis augue sed mi tristique congue. Nullam ut eros
+                        at nisi pellentesque tristique nec id elit.
+                        Integer nec mi vel tellus dapibus aliquam quis vel erat. Donec ultrices nulla quis augue
+                        suscipit, sed ultrices quam aliquet.</p>
+
+                </div>
+                <div class="slide">
+                    <h4>Serviços</h4>
+                    <p>Aliquam id augue vel arcu interdum luctus. Curabitur commodo vehicula nibh non euismod. Nam nec
+                        est velaugue elementum auctor. Morbi ullamcorper, mauris eu sagittis ornare, urna velit accumsan
+                        enim, utornare lorem ante et ex. Curabitur iaculis augue sed mi tristique congue. Nullam ut eros
+                        at nisi pellentesque tristique nec id elit.
+                        Integer nec mi vel tellus dapibus aliquam quis vel erat. Donec ultrices nulla quis augue
+                        suscipit, sed ultrices quam aliquet.</p>
+
+                </div>
+
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+
+                <div class="indicadores">
+                    <span class="ponto"></span>
+                    <span class="ponto"></span>
+                    <span class="ponto"></span>
+                    <span class="ponto"></span>
+                </div>
             </div>
         </section>
 
