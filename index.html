@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sua descrição aqui"> <!-- Descrição para SEO -->
-    <meta name="keywords" content="Mecãnica, serviços, manutenção"> <!-- Melhora a indexação -->
-    <meta name="author" content="Seu Nome ou Empresa"> <!-- Nome da empresa -->
-    <title>Oficina</title>
+    <meta name="description" content="Oficina Mecânica especializada em manutenção veicular completa">
+    <meta name="keywords" content="mecânica, automóveis, troca de óleo, freios, injeção eletrônica">
+    <meta name="author" content="Oficina Mecânica"> <!-- Nome da empresa -->
+    <title>Oficina Mecânica | Manutenção Automotiva</title>
     <link rel="stylesheet" href="CSS/global_style.css">
     <script src="JS/carousel.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
             <div class="logo">
                 <h1><a href="#inicio">Oficina<br>Mecânica</a></h1>
             </div>
-            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <div class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu">☰</div>
             <ul class="nav-links">
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#sobre">Sobre</a></li>
@@ -33,7 +33,7 @@
     <main>
         <section id="inicio">
             <h2>Bem-vindo à Nossa Landing Page</h2>
-            <p>Esta é a seção inicial da página.</p>
+            <p>Sua solução completa em manutenção automotiva</p>
         </section>
 
         <section id="servicos" aria-labelledby="titulo-servicos">
@@ -41,54 +41,38 @@
 
             <div class="carousel">
                 <div class="slide active">
-                    <h4>Serviços</h4>
-                    <p>Aliquam id augue vel arcu interdum luctus. Curabitur commodo vehicula nibh non euismod. Nam nec
-                        est velaugue elementum auctor. Morbi ullamcorper, mauris eu sagittis ornare, urna velit accumsan
-                        enim, utornare lorem ante et ex. Curabitur iaculis augue sed mi tristique congue. Nullam ut eros
-                        at nisi pellentesque tristique nec id elit.
-                        Integer nec mi vel tellus dapibus aliquam quis vel erat. Donec ultrices nulla quis augue
-                        suscipit, sed ultrices quam aliquet.</p>
+                    <h4>Troca de óleo e filtros</h4>
+                    <p>Substituição do óleo do motor e dos filtros de óleo, ar e combustível para garantir melhor
+                        desempenho e vida útil do motor.</p>
 
                 </div>
                 <div class="slide">
-                    <h4>Serviços</h4>
-                    <p>Aliquam id augue vel arcu interdum luctus. Curabitur commodo vehicula nibh non euismod. Nam nec
-                        est velaugue elementum auctor. Morbi ullamcorper, mauris eu sagittis ornare, urna velit accumsan
-                        enim, utornare lorem ante et ex. Curabitur iaculis augue sed mi tristique congue. Nullam ut eros
-                        at nisi pellentesque tristique nec id elit.
-                        Integer nec mi vel tellus dapibus aliquam quis vel erat. Donec ultrices nulla quis augue
-                        suscipit, sed ultrices quam aliquet.</p>
+                    <h4>Sistema de freios</h4>
+                    <p>Diagnóstico e manutenção do sistema de injeção eletrônica, limpeza de bicos injetores,
+                        troca de sensores defeituosos e verificação da unidade de controle eletrônico (ECU). </p>
                 </div>
-                
+
                 <div class="slide">
-                    <h4>Serviços</h4>
-                    <p>Aliquam id augue vel arcu interdum luctus. Curabitur commodo vehicula nibh non euismod. Nam nec
-                        est velaugue elementum auctor. Morbi ullamcorper, mauris eu sagittis ornare, urna velit accumsan
-                        enim, utornare lorem ante et ex. Curabitur iaculis augue sed mi tristique congue. Nullam ut eros
-                        at nisi pellentesque tristique nec id elit.
-                        Integer nec mi vel tellus dapibus aliquam quis vel erat. Donec ultrices nulla quis augue
-                        suscipit, sed ultrices quam aliquet.</p>
+                    <h4>Injeção eletrônica</h4>
+                    <p>Limpeza de bicos injetores, troca de sensores e ajuste da mistura ar/combustível para melhor
+                        economia e desempenho do motor.</p>
 
                 </div>
                 <div class="slide">
-                    <h4>Serviços</h4>
-                    <p>Aliquam id augue vel arcu interdum luctus. Curabitur commodo vehicula nibh non euismod. Nam nec
-                        est velaugue elementum auctor. Morbi ullamcorper, mauris eu sagittis ornare, urna velit accumsan
-                        enim, utornare lorem ante et ex. Curabitur iaculis augue sed mi tristique congue. Nullam ut eros
-                        at nisi pellentesque tristique nec id elit.
-                        Integer nec mi vel tellus dapibus aliquam quis vel erat. Donec ultrices nulla quis augue
-                        suscipit, sed ultrices quam aliquet.</p>
+                    <h4>Embreagem e câmbio</h4>
+                    <p>Substituição do kit de embreagem, troca de fluídos e manutenção do câmbio para evitar falhas e
+                        melhorar a dirigibilidade.</p>
 
                 </div>
 
-                <button class="prev">❮</button>
-                <button class="next">❯</button>
+                <button class="prev" aria-label="Slide anterior">❮</button>
+                <button class="next" aria-label="Próximo slide">❯</button>
 
-                <div class="indicadores">
-                    <span class="ponto"></span>
-                    <span class="ponto"></span>
-                    <span class="ponto"></span>
-                    <span class="ponto"></span>
+                <div class="indicadores" role="navigation" aria-label="Navegação do carrossel">
+                    <span class="ponto" role="button" tabindex="0"></span>
+                    <span class="ponto" role="button" tabindex="0"></span>
+                    <span class="ponto" role="button" tabindex="0"></span>
+                    <span class="ponto" role="button" tabindex="0"></span>
                 </div>
             </div>
         </section>
@@ -111,19 +95,26 @@
 
     <footer>
         <div class="footer_container">
-            <p>Copyright &copy; 2025 | Nome da empresa | Developed by RHCC </p>
+            <p>Copyright &copy; <span id="current-year"></span> | Nome da empresa | Developed by RHCC </p>
         </div>
     </footer>
 
     <script>
+        // Atualizar ano automaticamente
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Menu mobile
         function toggleMenu() {
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
         }
 
+        // Fechar menu ao clicar em link
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 document.querySelector('.nav-links').classList.remove('active');
+                document.body.classList.remove('menu-open');
             });
         });
     </script>

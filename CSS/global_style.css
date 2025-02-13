@@ -70,7 +70,7 @@ nav {
 
 /* ===== SEÇÕES ===== */
 section {
-    padding: 30px 20px;/* Adiciona espaçamento interno nas seções */
+    padding: 40px 20px 10px 20px;/* Adiciona espaçamento interno nas seções */
     text-align: center;/* Centraliza o conteúdo */
     min-height: 20vh;/* Define a altura mínima de cada seção */
     max-height: 100vh;
@@ -95,28 +95,41 @@ section p {
     background-color: #c0c0c0;/* Define a cor de fundo da seção "Contato" */
 }
 
+/* Menu mobile aberto */
+body.menu-open {
+    overflow: hidden;
+}
+
 /* ===== CORROSSEL ===== */
-.carousel{
+.carousel {
     position: relative;
-    max-width: 800px; /* Ajusta a largura conforme necessário */
-    margin: 0 auto;
-    overflow: hidden; /* Esconde os slides fora da area visivel */
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
 }
 
-.slide{
-    width: 100%;
-    position: absolute; /* Garante que os slides fiquem sobrepostos */
-    opacity: 0; /* Inicia invisível */
-    transition: opacity 1s ease-in-out; /* Transição suave */
+.slide {
+   /* width: 100%;*/
+    min-height: 300px;
+    display: none;
+    padding: 2rem;
+    background: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.slide.active{
-    opacity: 1; /* Torna o slide ativo visível */
-    position: relative; /* Mantém o fluxo do layout */
+.slide.active {
+    display: block;
+    animation: fade 0.5s ease-in;
+}
+
+.slide p{
+    padding: 10px 20px;
+    margin: 40px;
 }
 
 @keyframes fade {
-    from { opacity: 0.4; }
+    from { opacity: 0; }
     to { opacity: 1; }
 }
 
@@ -126,8 +139,8 @@ section p {
     top: 50%;
     transform: translateY(-50%);
     padding: 16px;
-    background: rgba(0,0,0,0.5);
-    color: white;
+    background: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
     border: none;
     cursor: pointer;
 }
@@ -138,23 +151,24 @@ section p {
 /* Indicadores de slide (pontos) */
 .indicadores {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 8px;
+    gap: 10px;
 }
 
 .ponto {
-    width: 12px;
-    height: 12px;
-    background: rgba(255,255,255,0.5);
-    border-radius: 50%;
-    cursor: pointer;
+    width: 24px;
+    height: 6px;
+    background: #333;
+    opacity: 0.5;
+    transition: all 0.3s ease;
 }
 
 .ponto.active {
-    background: white; /* Cor do ponto ativo */
+    opacity: 1;
+    transform: scale(1.2);
 }
 
 /* ===== RODAPÉ ===== */
@@ -201,5 +215,38 @@ footer p {
 
     .logo h1 a {
         color: white;/* Define a cor do texto do logo */
+    }
+    
+    .carousel {
+        margin: 1rem;
+        padding: 0;
+    }
+    
+    .slide {
+        padding: 1rem;
+        min-height: auto;
+    }
+    
+    .prev, .next {
+        font-size: 2rem;
+        padding: 8px;
+    }
+    
+    .indicadores {
+        bottom: -20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    .nav-links {
+        top: 50px;
+    }
+    
+    section {
+        padding: 2rem 1rem;
     }
 }
