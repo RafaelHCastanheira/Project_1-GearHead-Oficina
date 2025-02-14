@@ -67,15 +67,24 @@ nav {
     color: white;/* Define a cor do ícone */
     cursor: pointer;/* Muda o cursor para indicar que é clicável */
 }
+/* ===== CONTATO ===== */
+.contato-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* ===== SEÇÕES ===== */
 section {
-    padding: 40px 20px 10px 20px;/* Adiciona espaçamento interno nas seções */
+    padding: 60px 20px 10px 20px;/* Adiciona espaçamento interno nas seções */
     text-align: center;/* Centraliza o conteúdo */
     min-height: 20vh;/* Define a altura mínima de cada seção */
     max-height: 100vh;
 }
 section h3{
+    display: flex;
+    justify-content: center;
     font-size: 28px;
 }
 section p {
@@ -120,7 +129,7 @@ body.menu-open {
 
 .slide.active {
     display: block;
-    animation: fade 0.5s ease-in;
+    animation: fade 1s ease-in;
 }
 
 .slide p{
@@ -129,7 +138,7 @@ body.menu-open {
 }
 
 @keyframes fade {
-    from { opacity: 0; }
+    from { opacity: .8; }
     to { opacity: 1; }
 }
 
@@ -147,6 +156,12 @@ body.menu-open {
 
 .prev { left: 0; }
 .next { right: 0; }
+
+/* Adição de hover no carrossel */
+.carousel:hover .prev,
+.carousel:hover .next {
+    background: rgba(0, 0, 0, 0.1);
+}
 
 /* Indicadores de slide (pontos) */
 .indicadores {
@@ -171,6 +186,12 @@ body.menu-open {
     transform: scale(1.2);
 }
 
+/* Melhorias de acessibilidade */
+.ponto:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
 /* ===== RODAPÉ ===== */
 footer {
     background-color: #333;/* Define a cor de fundo do rodapé */
@@ -180,8 +201,9 @@ footer {
     margin-top: auto;/* Mantém o rodapé na parte inferior da página */
 }
 footer p {
-    text-align: justify;
-    margin-left: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 15px;
 }
 
 /* ===== RESPONSIVIDADE ===== */
@@ -201,10 +223,13 @@ footer p {
         position: absolute;/* Permite sobrepor outros elementos */
         left: 0;/* Alinha os links à esquerda */
         top: 60px;/* Define a posição abaixo do cabeçalho */
+        transform: translateX(-100%);
     }
 
     .nav-links.active {
         display: flex;/* Exibe os links ao ativar o menu */
+        transform: translateX(0);
+
     }
 
     .menu-toggle {

@@ -54,9 +54,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         ponto.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') showSlide(index);
+        });
     });
-});
 
-// Iniciar
-initCarousel();
+    // Iniciar
+    initCarousel();
 });

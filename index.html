@@ -48,8 +48,8 @@
                 </div>
                 <div class="slide">
                     <h4>Sistema de freios</h4>
-                    <p>Diagnóstico e manutenção do sistema de injeção eletrônica, limpeza de bicos injetores,
-                        troca de sensores defeituosos e verificação da unidade de controle eletrônico (ECU). </p>
+                    <p>Reparo e substituição de pastilhas, discos, tambores e cilindros. Verificação do sistema
+                        hidráulico e ajuste do freio de estacionamento.</p>
                 </div>
 
                 <div class="slide">
@@ -78,18 +78,29 @@
         </section>
 
         <section id="sobre" aria-labelledby="titulo-sobre">
-            <h3 id="titulo-sobre">Sobre</h3>
-            <p>Sed in enim maximus, scelerisque mi sed, pulvinar diam...</p>
+            <h3 id="titulo-sobre">Sobre nós</h3>
+            <p>Há mais de 15 anos oferecendo serviços mecânicos de qualidade. Nossa equipe certificada utiliza
+                equipamentos de última geração para garantir o melhor desempenho do seu veículo.</p>
         </section>
 
         <section id="localizacao" aria-labelledby="titulo-localizacao">
-            <h3 id="titulo-localizacao">Localização</h3>
-            <p>Sed in enim maximus, scelerisque mi sed, pulvinar diam...</p>
+            <h3 id="titulo-localizacao">Onde estamos localizados</h3>
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.6222464392318!2d-48.44301462316045!3d-22.93221752097029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c6def45d2c58c5%3A0x2513b6ff7a10e697!2sR.%20Ant%C3%B4nio%20Henrique%20de%20Lima%2C%20318%20-%20Jardim%20Santa%20Monica%2C%20Botucatu%20-%20SP%2C%2018615-083!5e0!3m2!1spt-BR!2sbr!4v1739560092466!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" aria-label="Mapa da localização da oficina"></iframe>
+                </iframe>
+            </div>
         </section>
 
         <section id="contato" aria-labelledby="titulo-contato">
-            <h3 id="titulo-contato">Contato</h3>
-            <p>Aliquam id augue vel arcu interdum luctus...</p>
+            <h3 id="titulo-contato">Fale conosco</h3>
+            <div class="contato-container">
+                <p>📞 (11) 9999-9999<br>
+                    📧 contato@oficina.com.br<br>
+                    🕒 Seg-Sex: 08h às 18h</p>
+            </div>
         </section>
     </main>
 
@@ -110,12 +121,31 @@
             document.body.classList.toggle('menu-open');
         }
 
-        // Fechar menu ao clicar em link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.querySelector('.nav-links').classList.remove('active');
+        // Fechar menu ao clicar fora ou em links
+        document.addEventListener('click', function (event) {
+            const navLinks = document.querySelector('.nav-links');
+            const menuToggle = document.querySelector('.menu-toggle');
+
+            // Fecha se clicar fora do menu ou no toggle
+            if (document.body.classList.contains('menu-open') &&
+                !event.target.closest('.nav-links') &&
+                !event.target.closest('.menu-toggle')) {
+                navLinks.classList.remove('active');
                 document.body.classList.remove('menu-open');
-            });
+            }
+        });
+
+        // Fechar ao rolar (opcional)
+        window.addEventListener('scroll', () => {
+            document.querySelector('.nav-links').classList.remove('active');
+            document.body.classList.remove('menu-open');
+        });
+
+        // Adicione esta função para fechar o menu ao pressionar ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && document.body.classList.contains('menu-open')) {
+                toggleMenu();
+            }
         });
     </script>
 </body>
