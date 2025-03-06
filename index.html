@@ -18,7 +18,7 @@
     <header>
         <nav>
             <div class="logo">
-                <h1><a href="#inicio">Oficina<br>Mecânica</a></h1>
+                <a href="#inicio">Oficina<br>Mecânica</a>
             </div>
             <div class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu">☰</div>
             <ul class="nav-links">
@@ -31,9 +31,12 @@
     </header>
 
     <main>
-        <section id="inicio">
-            <h2>Bem-vindo à Nossa Landing Page</h2>
-            <p>Sua solução completa em manutenção automotiva</p>
+        <section id="inicio" aria-labelledby="titulo-inicio">
+            <h1 id="titulo-inicio">Bem-vindo à Nossa Landing Page</h1>
+            <p>Sua solução completa em manutenção automotiva aqui na "Oficina Mecânica", oferecemos uma ampla gama de
+                serviços para manter seu veículo em excelente condição e garantir sua segurança e desempenho na estrada.
+                <br>Contamos com uma equipe de mecânicos altamente qualificados está pronta para atender todas as suas necessidades
+                automotivas.</p>
         </section>
 
         <section id="servicos" aria-labelledby="titulo-servicos">
@@ -65,10 +68,28 @@
 
                 </div>
 
+                <div class="slide">
+                    <h4>Sistema Elétrico</h4>
+                    <p>Diagnosticamos e reparamos problemas no sistema elétrico, como baterias,
+                        alternadores, iluminação e sistemas de ignição.
+                    </p>
+
+                </div>
+
+                <div class="slide">
+                    <h4>Ar Condicionado</h4>
+                    <p>Oferecemos manutenção e reparos no sistema de ar condicionado para garantir o conforto térmico
+                        dentro do veículo.
+                    </p>
+
+                </div>
+
                 <button class="prev" aria-label="Slide anterior">❮</button>
                 <button class="next" aria-label="Próximo slide">❯</button>
 
                 <div class="indicadores" role="navigation" aria-label="Navegação do carrossel">
+                    <span class="ponto" role="button" tabindex="0"></span>
+                    <span class="ponto" role="button" tabindex="0"></span>
                     <span class="ponto" role="button" tabindex="0"></span>
                     <span class="ponto" role="button" tabindex="0"></span>
                     <span class="ponto" role="button" tabindex="0"></span>
@@ -79,7 +100,7 @@
 
         <section id="sobre" aria-labelledby="titulo-sobre">
             <h3 id="titulo-sobre">Sobre nós</h3>
-            <p>Há mais de 15 anos oferecendo serviços mecânicos de qualidade. Nossa equipe certificada utiliza
+            <p>Há mais de 15 anos oferecendo serviços mecânicos de qualidade.<br> Nossa equipe certificada utiliza
                 equipamentos de última geração para garantir o melhor desempenho do seu veículo.</p>
         </section>
 
@@ -89,7 +110,7 @@
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.6222464392318!2d-48.44301462316045!3d-22.93221752097029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c6def45d2c58c5%3A0x2513b6ff7a10e697!2sR.%20Ant%C3%B4nio%20Henrique%20de%20Lima%2C%20318%20-%20Jardim%20Santa%20Monica%2C%20Botucatu%20-%20SP%2C%2018615-083!5e0!3m2!1spt-BR!2sbr!4v1739560092466!5m2!1spt-BR!2sbr"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" aria-label="Mapa da localização da oficina"></iframe>
+                    referrerpolicy="no-referrer-when-downgrade" aria-label="Mapa da localização da oficina">
                 </iframe>
             </div>
         </section>

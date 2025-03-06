@@ -27,7 +27,7 @@ header {
     font-size: 24px;/* Define o tamanho da fonte do logo */
     font-weight: bold;/* Deixa o texto do logo em negrito */
 }
-.logo h1{
+.logo {
     padding: 10px 0px;
     text-align: center; /* Centraliza o texto */
     line-height: 1.2; /* Controla o espaçamento entre as linhas */
@@ -148,8 +148,8 @@ body.menu-open {
     top: 50%;
     transform: translateY(-50%);
     padding: 16px;
-    background: rgba(0, 0, 0, 0);
-    color: rgb(0, 0, 0);
+    background: #fff;
+    color: #000;
     border: none;
     cursor: pointer;
 }
@@ -198,7 +198,7 @@ footer {
     color: white;/* Define a cor do texto */
     text-align: center;/* Centraliza o texto */
     padding: 5px;/* Adiciona espaçamento interno */
-    margin-top: auto;/* Mantém o rodapé na parte inferior da página */
+    margin-top: 5px;/* Mantém o rodapé na parte inferior da página */
 }
 footer p {
     text-align: center;
@@ -238,7 +238,7 @@ footer p {
         padding: 10px;/* Adiciona espaçamento interno */
     }
 
-    .logo h1 a {
+    .logo a {
         color: white;/* Define a cor do texto do logo */
     }
     
@@ -263,7 +263,7 @@ footer p {
 }
 
 @media (max-width: 480px) {
-    .logo h1 {
+    .logo a {
         font-size: 1.5rem;
     }
     
