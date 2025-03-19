@@ -12,7 +12,7 @@ body {
 
 /* ===== CABEÇALHO ===== */
 header {
-    background-color: #333;/* Define a cor de fundo do cabeçalho */
+    background-color: #272d3e;/* Define a cor de fundo do cabeçalho */
     padding: 2px 0;/* Adiciona espaçamento vertical ao cabeçalho */
     position: sticky;/* Mantém o cabeçalho fixo no topo ao rolar a página */
     top: 0;/* Fixa o cabeçalho no topo da página */
@@ -22,7 +22,7 @@ header {
 
 /* ===== LOGO ===== */
 .logo a {
-    color: #fff;/* Define a cor do texto do logo */
+    color: #F2CEA2;/* Define a cor do texto do logo */
     text-decoration: none;/* Remove sublinhado do link */
     font-size: 24px;/* Define o tamanho da fonte do logo */
     font-weight: bold;/* Deixa o texto do logo em negrito */
@@ -59,7 +59,7 @@ nav {
     transition: background-color 0.3s;/* Suaviza a transição ao mudar a cor de fundo */
 }
 .nav-links a:hover {
-    background-color: #555;/* Muda a cor de fundo ao passar o mouse */
+    background-color: #41485A;/* Muda a cor de fundo ao passar o mouse */
 }
 .menu-toggle {
     display: none;/* Oculta o ícone do menu hamburguer por padrão */
@@ -194,8 +194,8 @@ body.menu-open {
 
 /* ===== RODAPÉ ===== */
 footer {
-    background-color: #333;/* Define a cor de fundo do rodapé */
-    color: white;/* Define a cor do texto */
+    background-color: #272d3e;/* Define a cor de fundo do rodapé */
+    color: #f2cea2c4;/* Define a cor do texto */
     text-align: center;/* Centraliza o texto */
     padding: 5px;/* Adiciona espaçamento interno */
     margin-top: 5px;/* Mantém o rodapé na parte inferior da página */
