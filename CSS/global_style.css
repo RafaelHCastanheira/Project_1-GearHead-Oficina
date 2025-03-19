@@ -132,16 +132,10 @@ body.menu-open {
     animation: fade 5s ease-in;
 }
 
-.slide p {
-    margin: 0; /* Remove margens anteriores */
-    padding: 0;
-}
-
 .tx-slide {
     flex: 1; /* Ocupa espaço disponível */
     max-width: 450px; /* Largura máxima do texto */
     padding: 15px;
-    background-color: rgba(0, 255, 255, 0.144);
 }
 
 .cont-slide {
