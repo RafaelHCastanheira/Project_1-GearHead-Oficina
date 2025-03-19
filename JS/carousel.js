@@ -23,16 +23,16 @@ document.addEventListener("DOMContentLoaded", () => {
         pontos[currentSlide].classList.add('active');
     }
 
-    function startInterval() {
-        slideInterval = setInterval(() => {
-            showSlide(currentSlide + 1);
-        }, 5000);
-    }
+    // function startInterval() {
+    //     slideInterval = setInterval(() => {
+    //         showSlide(currentSlide + 1);
+    //     }, 5000);
+    // }
 
-    function resetInterval() {
-        clearInterval(slideInterval);
-        startInterval();
-    }
+    // function resetInterval() {
+    //     clearInterval(slideInterval);
+    //     startInterval();
+    // }
 
 
     // Event listeners para os botões

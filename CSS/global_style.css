@@ -129,12 +129,40 @@ body.menu-open {
 
 .slide.active {
     display: block;
-    animation: fade 1s ease-in;
+    animation: fade 5s ease-in;
 }
 
-.slide p{
-    padding: 10px 20px;
-    margin: 40px;
+.slide p {
+    margin: 0; /* Remove margens anteriores */
+    padding: 0;
+}
+
+.tx-slide {
+    flex: 1; /* Ocupa espaço disponível */
+    max-width: 450px; /* Largura máxima do texto */
+    padding: 15px;
+    background-color: rgba(0, 255, 255, 0.144);
+}
+
+.cont-slide {
+    display: flex;
+    gap: 20px; /* Espaço entre imagem e texto */
+    align-items: center; /* Alinhamento vertical */
+    justify-content: center; /* Alinhamento horizontal */
+    padding: 15px;
+}
+
+.img-slide {
+    flex: none; /* Não redimensiona */
+    width: 250px;
+    height: 200px;
+}
+
+.img-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém proporção da imagem */
+    border-radius: 5px;
 }
 
 @keyframes fade {
@@ -236,10 +264,11 @@ footer p {
         display: block;/* Exibe o ícone do menu hamburguer */
         margin-left: 15px;/* Adiciona margem à esquerda */
         padding: 10px;/* Adiciona espaçamento interno */
+        color: #F2CEA2c4;
     }
 
     .logo a {
-        color: white;/* Define a cor do texto do logo */
+        color: #F2CEA2;/* Define a cor do texto do logo */
     }
     
     .carousel {
