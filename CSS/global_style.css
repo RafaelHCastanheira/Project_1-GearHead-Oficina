@@ -351,6 +351,7 @@ footer p {
         /* Define a cor de fundo */
         padding: 10px;
         /* Adiciona espaçamento interno */
+        margin-top: 31px;
         position: absolute;
         /* Permite sobrepor outros elementos */
         left: 0;
