@@ -1,74 +1,112 @@
 /* ===== ESTILOS GERAIS ===== */
 body {
-    font-family: 'Poppins', sans-serif;/* Define a fonte padrão do site */
-    background-color: #f4f4f4;/* Define a cor de fundo da página */
-    margin: 0;/* Remove margens externas padrão do body */
-    padding: 0;/* Remove padding padrão do body */
-    scroll-behavior: smooth;/* Suaviza a rolagem ao navegar entre seções */
-    display: flex;/* Define o body como um contêiner flexível */
-    flex-direction: column;/* Organiza os elementos em coluna */
-    min-height: 100vh;/* Garante que o body ocupe pelo menos toda a altura da tela */
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 70%;
 }
 
 /* ===== CABEÇALHO ===== */
 header {
-    background-color: #272d3e;/* Define a cor de fundo do cabeçalho */
-    padding: 2px 0;/* Adiciona espaçamento vertical ao cabeçalho */
-    position: sticky;/* Mantém o cabeçalho fixo no topo ao rolar a página */
-    top: 0;/* Fixa o cabeçalho no topo da página */
-    width: 100%;/* Garante que o cabeçalho ocupe toda a largura */
-    z-index: 1000;/* Garante que o cabeçalho fique acima de outros elementos */
+    background-color: #272d3e;
+    /* Define a cor de fundo do cabeçalho */
+    padding: 2px 0;
+    /* Adiciona espaçamento vertical ao cabeçalho */
+    position: sticky;
+    /* Mantém o cabeçalho fixo no topo ao rolar a página */
+    top: 0;
+    /* Fixa o cabeçalho no topo da página */
+    width: 100%;
+    /* Garante que o cabeçalho ocupe toda a largura */
+    z-index: 1000;
+    /* Garante que o cabeçalho fique acima de outros elementos */
 }
 
 /* ===== LOGO ===== */
 .logo a {
-    color: #F2CEA2;/* Define a cor do texto do logo */
-    text-decoration: none;/* Remove sublinhado do link */
-    font-size: 24px;/* Define o tamanho da fonte do logo */
-    font-weight: bold;/* Deixa o texto do logo em negrito */
+    color: #F2CEA2;
+    /* Define a cor do texto do logo */
+    text-decoration: none;
+    /* Remove sublinhado do link */
+    font-size: 24px;
+    /* Define o tamanho da fonte do logo */
+    font-weight: bold;
+    /* Deixa o texto do logo em negrito */
 }
+
 .logo {
     padding: 10px 0px;
-    text-align: center; /* Centraliza o texto */
-    line-height: 1.2; /* Controla o espaçamento entre as linhas */
-    margin: 0; /* Remove margens padrão do h1 */
+    text-align: center;
+    /* Centraliza o texto */
+    line-height: 1.2;
+    /* Controla o espaçamento entre as linhas */
+    margin: 0;
+    /* Remove margens padrão do h1 */
 
 }
 
 /* ===== NAVEGAÇÃO ===== */
 nav {
-    display: flex;/* Define a navegação como flexível para melhor alinhamento */
-    align-items: center;/* Alinha os itens da navegação verticalmente */
-    padding: 0 10px;/* Adiciona espaçamento lateral à navegação */
+    display: flex;
+    /* Define a navegação como flexível para melhor alinhamento */
+    align-items: center;
+    /* Alinha os itens da navegação verticalmente */
+    padding: 0 25px;
+    /* Adiciona espaçamento lateral à navegação */
 }
+
 .nav-links {
-    list-style: none;/* Remove os marcadores padrão da lista */
-    display: flex;/* Exibe os itens da lista em linha */
-    gap: 20px;/* Define o espaçamento entre os itens */
-    padding: 0;/* Remove o padding padrão */
-    margin: 0 15px;/* Define margens laterais */
+    list-style: none;
+    /* Remove os marcadores padrão da lista */
+    display: flex;
+    /* Exibe os itens da lista em linha */
+    gap: 30px;
+    /* Define o espaçamento entre os itens */
+    padding: 0 30px;
+    /* Define padding laterais */
 }
+
 .nav-links li {
-    display: inline;/* Mantém os itens da lista em linha */
+    display: inline;
+    /* Mantém os itens da lista em linha */
 }
+
 .nav-links a {
-    text-decoration: none;/* Remove o sublinhado dos links */
-    color: white;/* Define a cor do texto dos links */
-    padding: 10px 15px;/* Adiciona espaçamento interno aos links */
-    border-radius: 5px;/* Adiciona bordas arredondadas */
-    transition: background-color 0.3s;/* Suaviza a transição ao mudar a cor de fundo */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    color: white;
+    /* Define a cor do texto dos links */
+    padding: 10px 15px;
+    /* Adiciona espaçamento interno aos links */
+    border-radius: 5px;
+    /* Adiciona bordas arredondadas */
+    transition: background-color 0.3s;
+    /* Suaviza a transição ao mudar a cor de fundo */
 }
+
 .nav-links a:hover {
-    background-color: #41485A;/* Muda a cor de fundo ao passar o mouse */
+    background-color: #41485A;
+    /* Muda a cor de fundo ao passar o mouse */
 }
+
 .menu-toggle {
-    display: none;/* Oculta o ícone do menu hamburguer por padrão */
-    font-size: 24px;/* Define o tamanho do ícone */
-    color: white;/* Define a cor do ícone */
-    cursor: pointer;/* Muda o cursor para indicar que é clicável */
+    display: none;
+    /* Oculta o ícone do menu hamburguer por padrão */
+    font-size: 24px;
+    /* Define o tamanho do ícone */
+    color: white;
+    /* Define a cor do ícone */
+    cursor: pointer;
+    /* Muda o cursor para indicar que é clicável */
 }
+
 /* ===== CONTATO ===== */
-.contato-container{
+.contato-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,31 +115,69 @@ nav {
 
 /* ===== SEÇÕES ===== */
 section {
-    padding: 60px 20px 10px 20px;/* Adiciona espaçamento interno nas seções */
-    text-align: center;/* Centraliza o conteúdo */
-    min-height: 20vh;/* Define a altura mínima de cada seção */
+    padding: 60px 20px 10px 20px;
+    /* Adiciona espaçamento interno nas seções */
+    text-align: center;
+    /* Centraliza o conteúdo */
+    min-height: 20vh;
+    /* Define a altura mínima de cada seção */
     max-height: 100vh;
 }
-section h3{
+
+section h3 {
     display: flex;
     justify-content: center;
     font-size: 28px;
 }
+
 section p {
-    text-align: justify;/* Torna o texto dentro de cada seção justificado*/
-}
-#inicio {
-    background-color: #f4f4f4;/* Define a cor de fundo da seção "Início" */
-}
-#sobre {
-    background-color: #e2e2e2;/* Define a cor de fundo da seção "Sobre" */
-}
-#servicos {
-    background-color: #d1d1d1;/* Define a cor de fundo da seção "Serviços" */
+    text-align: justify;
+    /* Torna o texto dentro de cada seção justificado*/
 }
 
-#contato {
-    background-color: #c0c0c0;/* Define a cor de fundo da seção "Contato" */
+#inicio {
+    position: relative;
+    min-height: 50vh; /* Altura reduzida */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); /* Novo gradiente de fundo */
+}
+
+#titulo-inicio {
+    font-size: 4rem;
+    color: #F2CEA2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.85);
+    z-index: 1;
+    text-align: center;
+}
+
+#inicio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Img/OFICINA.webp'), url("../Img/OFICINA.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.65; /* Opacidade da imagem */
+    z-index: 0;
+}
+
+#inicio p {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    line-height: 1.6;
 }
 
 /* Menu mobile aberto */
@@ -112,19 +188,19 @@ body.menu-open {
 /* ===== CORROSSEL ===== */
 .carousel {
     position: relative;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 2rem auto;
     padding: 1rem;
 }
 
 .slide {
-   /* width: 100%;*/
+    /* width: 100%;*/
     min-height: 300px;
     display: none;
     padding: 2rem;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .slide.active {
@@ -133,21 +209,27 @@ body.menu-open {
 }
 
 .tx-slide {
-    flex: 1; /* Ocupa espaço disponível */
-    max-width: 450px; /* Largura máxima do texto */
+    flex: 1;
+    /* Ocupa espaço disponível */
+    max-width: 450px;
+    /* Largura máxima do texto */
     padding: 15px;
 }
 
 .cont-slide {
     display: flex;
-    gap: 20px; /* Espaço entre imagem e texto */
-    align-items: center; /* Alinhamento vertical */
-    justify-content: center; /* Alinhamento horizontal */
+    gap: 20px;
+    /* Espaço entre imagem e texto */
+    align-items: center;
+    /* Alinhamento vertical */
+    justify-content: center;
+    /* Alinhamento horizontal */
     padding: 15px;
 }
 
 .img-slide {
-    flex: none; /* Não redimensiona */
+    flex: none;
+    /* Não redimensiona */
     width: 250px;
     height: 200px;
 }
@@ -155,17 +237,24 @@ body.menu-open {
 .img-slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Mantém proporção da imagem */
-    border-radius: 5px;
+    object-fit: cover;
+    /* Mantém proporção da imagem */
+    border-radius: 10px;
 }
 
 @keyframes fade {
-    from { opacity: .8; }
-    to { opacity: 1; }
+    from {
+        opacity: .8;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Botões de navegação */
-.prev, .next {
+.prev,
+.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -176,8 +265,13 @@ body.menu-open {
     cursor: pointer;
 }
 
-.prev { left: 0; }
-.next { right: 0; }
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
 
 /* Adição de hover no carrossel */
 .carousel:hover .prev,
@@ -216,12 +310,18 @@ body.menu-open {
 
 /* ===== RODAPÉ ===== */
 footer {
-    background-color: #272d3e;/* Define a cor de fundo do rodapé */
-    color: #f2cea2c4;/* Define a cor do texto */
-    text-align: center;/* Centraliza o texto */
-    padding: 5px;/* Adiciona espaçamento interno */
-    margin-top: 5px;/* Mantém o rodapé na parte inferior da página */
+    background-color: #272d3e;
+    /* Define a cor de fundo do rodapé */
+    color: #f2cea2c4;
+    /* Define a cor do texto */
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 5px;
+    /* Adiciona espaçamento interno */
+    margin-top: 5px;
+    /* Mantém o rodapé na parte inferior da página */
 }
+
 footer p {
     text-align: center;
     margin: 0;
@@ -229,59 +329,104 @@ footer p {
 }
 
 /* ===== RESPONSIVIDADE ===== */
-@media (max-width: 768px) {/* Aplica estilos para telas menores que 768px */
+@media (max-width: 768px) {
+
+    /* Aplica estilos para telas menores que 768px */
     nav {
-        flex-direction: unset;/* Mantém a direção padrão da flexbox */
-        align-items: center;/* Alinha os itens no centro */
+        flex-direction: unset;
+        /* Mantém a direção padrão da flexbox */
+        justify-content: space-between;
     }
 
     .nav-links {
-        display: none;/* Oculta os links de navegação por padrão */
-        flex-direction: column;/* Organiza os links em coluna */
-        width: 100%;/* Ocupa toda a largura */
-        text-align: left;/* Alinha os links à esquerda */
-        background: #333;/* Define a cor de fundo */
-        padding: 10px;/* Adiciona espaçamento interno */
-        position: absolute;/* Permite sobrepor outros elementos */
-        left: 0;/* Alinha os links à esquerda */
-        top: 60px;/* Define a posição abaixo do cabeçalho */
+        display: none;
+        /* Oculta os links de navegação por padrão */
+        flex-direction: column;
+        /* Organiza os links em coluna */
+        width: 100%;
+        /* Ocupa toda a largura */
+        text-align: left;
+        /* Alinha os links à esquerda */
+        background: #41485ae3;
+        /* Define a cor de fundo */
+        padding: 10px;
+        /* Adiciona espaçamento interno */
+        position: absolute;
+        /* Permite sobrepor outros elementos */
+        left: 0;
+        /* Alinha os links à esquerda */
+        top: 60px;
+        /* Define a posição abaixo do cabeçalho */
         transform: translateX(-100%);
     }
 
     .nav-links.active {
-        display: flex;/* Exibe os links ao ativar o menu */
+        display: flex;
+        /* Exibe os links ao ativar o menu */
         transform: translateX(0);
 
     }
 
     .menu-toggle {
-        display: block;/* Exibe o ícone do menu hamburguer */
-        margin-left: 15px;/* Adiciona margem à esquerda */
-        padding: 10px;/* Adiciona espaçamento interno */
+        display: block;
+        /* Exibe o ícone do menu hamburguer */
+        margin-left: 15px;
+        /* Adiciona margem à esquerda */
+        padding: 10px;
+        /* Adiciona espaçamento interno */
         color: #F2CEA2c4;
     }
 
     .logo a {
-        color: #F2CEA2;/* Define a cor do texto do logo */
+        color: #F2CEA2;
+        /* Define a cor do texto do logo */
     }
-    
+
     .carousel {
         margin: 1rem;
         padding: 0;
     }
-    
+
     .slide {
         padding: 1rem;
         min-height: auto;
     }
-    
-    .prev, .next {
+
+    .prev,
+    .next {
         font-size: 2rem;
         padding: 8px;
     }
-    
+
     .indicadores {
         bottom: -20px;
+    }
+
+    .cont-slide {
+        flex-direction: column;
+        /* Empilha em mobile */
+    }
+
+    .tx-slide {
+        max-width: 100%;
+        /* Largura total */
+    }
+
+    .img-slide {
+        width: 100%;
+        /* Largura total */
+        height: auto;
+    }
+    #inicio {
+        min-height: 40vh; /* Menor altura em telas pequenas */
+    }
+    #titulo-inicio {
+        font-size: 3rem;
+        padding: 20px;
+    }
+    
+    #inicio::before {
+        background-size: 90%;
     }
 }
 
@@ -289,11 +434,11 @@ footer p {
     .logo a {
         font-size: 1.5rem;
     }
-    
+
     .nav-links {
         top: 50px;
     }
-    
+
     section {
         padding: 2rem 1rem;
     }
