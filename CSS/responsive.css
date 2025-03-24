@@ -1,0 +1,122 @@
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+
+    /* Aplica estilos para telas menores que 768px */
+    nav {
+        flex-direction: unset;
+        /* Mantém a direção padrão da flexbox */
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        display: none;
+        /* Oculta os links de navegação por padrão */
+        flex-direction: column;
+        /* Organiza os links em coluna */
+        width: 100%;
+        /* Ocupa toda a largura */
+        text-align: left;
+        /* Alinha os links à esquerda */
+        background: #41485ae3;
+        /* Define a cor de fundo */
+        padding: 10px;
+        /* Adiciona espaçamento interno */
+        margin-top: 31px;
+        position: absolute;
+        /* Permite sobrepor outros elementos */
+        left: 0;
+        /* Alinha os links à esquerda */
+        top: 60px;
+        /* Define a posição abaixo do cabeçalho */
+        transform: translateX(-100%);
+    }
+
+    .nav-links.active {
+        display: flex;
+        /* Exibe os links ao ativar o menu */
+        transform: translateX(0);
+
+    }
+
+    .menu-toggle {
+        display: block;
+        /* Exibe o ícone do menu hamburguer */
+        margin-left: 15px;
+        /* Adiciona margem à esquerda */
+        padding: 10px;
+        /* Adiciona espaçamento interno */
+        color: #F2CEA2c4;
+    }
+
+    .logo a {
+        color: #F2CEA2;
+        /* Define a cor do texto do logo */
+    }
+
+    .carousel {
+        margin: 1rem;
+        padding: 0;
+    }
+
+    .slide {
+        padding: 1rem;
+        min-height: auto;
+    }
+
+    .prev,
+    .next {
+        font-size: 2rem;
+        padding: 8px;
+    }
+
+    .indicadores {
+        bottom: -20px;
+    }
+
+    .cont-slide {
+        flex-direction: column;
+        /* Empilha em mobile */
+    }
+
+    .tx-slide {
+        max-width: 100%;
+        /* Largura total */
+    }
+
+    .img-slide {
+        width: 100%;
+        /* Largura total */
+        height: auto;
+    }
+    #inicio {
+        min-height: 40vh; /* Menor altura em telas pequenas */
+    }
+    #titulo-inicio {
+        font-size: 3rem;
+        padding: 20px;
+    }
+    
+    #inicio::before {
+        background-size: 90%;
+    }
+
+    section p {
+        text-align: justify; /* Só justificar em desktop */
+        word-spacing: -0.05em; /* Ajuste fino de espaçamento */
+        hyphens: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo a {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        top: 50px;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+}
