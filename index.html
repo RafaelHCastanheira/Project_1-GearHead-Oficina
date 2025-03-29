@@ -23,7 +23,7 @@
 
 <body>
     <header>
-        <nav>
+        <nav aria-label="Navegação estrutural">
             <div class="logo">
                 <a href="#inicio">GearHead<br>Oficina</a>
             </div>
@@ -38,16 +38,12 @@
 
     <main>
         <section id="inicio" aria-labelledby="titulo-inicio">
-            </div>
             <div class="text-container">
+                <h2 id="titulo-inicio" class="sr-only">Bem-vindo <br> GearHead Oficina</h2>
                 <p>Sua solução completa em manutenção automotiva aqui na "Oficina Mecânica", oferecemos uma ampla
-                    gama de
-                    serviços para manter seu veículo em excelente condição e garantir sua segurança e desempenho na
-                    estrada.
-                    <br>Contamos com uma equipe de mecânicos altamente qualificados está pronta para atender todas
-                    as suas
-                    necessidades
-                    automotivas.
+                    gama de serviços para manter seu veículo em excelente condição e garantir sua segurança e desempenho
+                    na estrada. <br> Contamos com uma equipe de mecânicos altamente qualificados está pronta para
+                    atender todas as suas necessidades automotivas.
                 </p>
             </div>
         </section>
@@ -55,16 +51,18 @@
         <section id="servicos" aria-labelledby="titulo-servicos">
             <h3 id="titulo-servicos">Serviços</h3>
 
-            <div class="carousel">
+            <div class="carousel" role="region" aria-live="polite" aria-label="Carrossel de serviços">
                 <div class="slide active">
                     <h4>Troca de óleo e filtros</h4>
                     <div class="cont-slide">
                         <div class="img-slide">
-                            <img src="Img/Troca-de-óleo.webp" alt="Troca de óleo">
+                            <img src="Img/Troca-de-óleo.webp" alt="Mecânico realizando troca de óleo" loading="lazy"
+                                width="250" height="200" decoding="async">
                         </div>
                         <div class="tx-slide">
                             <p>Substituição do óleo do motor e dos filtros de óleo, ar e combustível para garantir
-                                um melhor desempenho e ajudar a prolongar a vida útil do motor.</p>
+                                um melhor desempenho de todo o sistema mecanico, afim de prolongar a vida útil do motor.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -73,7 +71,8 @@
                     <h4>Sistema de freios</h4>
                     <div class="cont-slide">
                         <div class="img-slide">
-                            <img src="Img/Sistema-freios.webp" alt="Manutenção no sistema de freios">
+                            <img src="Img/Sistema-freios.webp" alt="Manutenção no sistema de freios" loading="lazy"
+                                width="250" height="200" decoding="async">
                         </div>
                         <div class="tx-slide">
                             <p>Reparo e substituição de pastilhas, discos, tambores e cilindros. Verificação do sistema
@@ -86,7 +85,8 @@
                     <h4>Injeção eletrônica</h4>
                     <div class="cont-slide">
                         <div class="img-slide">
-                            <img src="Img/Injeção-eletronica.webp" alt="Manutenção no sistema de injeção eletronica">
+                            <img src="Img/Injeção-eletronica.webp" alt="Manutenção no sistema de injeção eletronica"
+                                loading="lazy" width="250" height="200" decoding="async">
                         </div>
                         <div class="tx-slide">
                             <p>Limpeza de bicos injetores, troca de sensores e ajuste da mistura ar combustível para
@@ -100,7 +100,8 @@
                     <h4>Embreagem e câmbio</h4>
                     <div class="cont-slide">
                         <div class="img-slide">
-                            <img src="Img/Embreagem.webp" alt="Disco de embreagem e platô">
+                            <img src="Img/Embreagem.webp" alt="Disco de embreagem e platô" loading="lazy" width="250"
+                                height="200" decoding="async">
                         </div>
                         <div class="tx-slide">
                             <p>Substituição do kit de embreagem, troca de fluídos e manutenção do câmbio para evitar
@@ -114,7 +115,8 @@
                     <h4>Sistema Elétrico</h4>
                     <div class="cont-slide">
                         <div class="img-slide">
-                            <img src="Img/Sistema-eletrico-auo.webp" alt="Medições dos sistemas eletricos do veículo">
+                            <img src="Img/Sistema-eletrico-auo.webp" alt="Medições dos sistemas eletricos do veículo"
+                                loading="lazy" width="250" height="200" decoding="async">
                         </div>
                         <div class="tx-slide">
                             <p>Diagnosticamos e reparamos problemas no sistema elétrico, como baterias,
@@ -128,7 +130,8 @@
                     <h4>Ar Condicionado</h4>
                     <div class="cont-slide">
                         <div class="img-slide">
-                            <img src="Img/Ar-condicionado-automotivo.webp" alt="Manutenção filtro do ar-condicionado">
+                            <img src="Img/Ar-condicionado-automotivo.webp" alt="Manutenção filtro do ar-condicionado"
+                                loading="lazy" width="250" height="200" decoding="async">
                         </div>
                         <div class="tx-slide">
                             <p>Oferecemos manutenção e reparos no sistema de ar condicionado para garantir o conforto
@@ -160,30 +163,44 @@
                 equipamentos de última geração para garantir o melhor desempenho do seu veículo.</p>
         </section>
 
-        <section id="faleconosco" aria-labelledby="titulo-faleconosco">
-            <h3 id="titulo-contato">Fale conosco</h3>
-            <div class="contato-container">
-                <p>📞 (11) 9999-9999<br>
+        <section id="faleconosco" aria-labelledby="titulo-falecontato">
+            <h3 id="titulo-falecontato">Fale conosco</h3>
 
-                    📧 contato@oficina.com.br<br>
-                    🕒 Seg-Sex: 08h às 17h</p>
-            </div>
-            <h3 id="titulo-faleconosco">Onde estamos situados</h3>
-            <div class="mapa">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7352.274967416005!2d-48.451654060492714!3d-22.87137913175146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c72084fe897cb3%3A0x1b04151597c2912a!2sVila%20dos%20Lavradores%2C%20Botucatu%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1742831214139!5m2!1spt-BR!2sbr"
-                    width="100%" height="350" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" aria-label="Mapa da localização da oficina"></iframe>
+            <div class="contato">
+                <div class="item">
+                    <img src="./Img/Icones/Phone.png">
+                    <p>(11) 9999-9999</p>
+                </div>
+                <div class="item">
+                    <img src="./Img/Icones/Mail.png">
+                    <p>contato@oficina.com.br</p>
+                </div>
+                <div class="item">
+                    <img src="./Img/Icones/Calendar.png">
+                    <p>Seg-Sex: 08h às 17h</p>
+                </div>
             </div>
         </section>
+        <div class="mapa">
+            <div class="title-map">
+                <img src="./Img/Icones/Local.png">
+                <h3 id="titulo-faleconosco"> Onde estamos situados </h3>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7352.274967416005!2d-48.451654060492714!3d-22.87137913175146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c72084fe897cb3%3A0x1b04151597c2912a!2sVila%20dos%20Lavradores%2C%20Botucatu%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1742831214139!5m2!1spt-BR!2sbr"
+                width="100%" height="350px" border:0; border-radius:10px;allowfullscreen="" sandbox="allow-scripts allow-same-origin" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" aria-label="Mapa da localização da oficina">
+            </iframe>
+        </div>
+        <a class="btn-wpp" href="https://wa.me/551199999999" target="_blank"><img src="./Img/Icones/Icon-wpp1.png" width="100px"></a>
     </main>
 
     <footer>
         <div class="footer_container">
-            <p>Copyright &copy; <span id="current-year"></span> | GearHead Oficina | Developed by RHCC <br> CNPJ: 10.524.245/0001-12</p>
+            <p>Copyright &copy; <span id="current-year"></span> | GearHead Oficina | Developed by RHCC <br> CNPJ:
+                10.524.245/0001-12</p>
         </div>
     </footer>
-
     <script>
         // Atualizar ano automaticamente
         document.getElementById('current-year').textContent = new Date().getFullYear();
@@ -191,8 +208,13 @@
         // Menu mobile
         function toggleMenu() {
             const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
+            const isExpanded = navLinks.classList.toggle('active');
+            document.querySelector('.menu-toggle')
+                .setAttribute('aria-expanded', isExpanded);
             document.body.classList.toggle('menu-open');
+            if (isExpanded) {
+                navLinks.querySelector('a').focus();
+            }
         }
 
         // Fechar menu ao clicar fora ou em links

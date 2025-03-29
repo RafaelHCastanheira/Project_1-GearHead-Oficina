@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentSlide = 0;
     let autoPlay = true;
     let slideInterval;
+    const SLIDE_INTERVAL = 8000;
 
     function initCarousel() {
         showSlide(currentSlide);
@@ -26,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function startInterval() {
         slideInterval = setInterval(() => {
             showSlide(currentSlide + 1);
-        }, 5000);
+        }, SLIDE_INTERVAL);
     }
 
     function resetInterval() {

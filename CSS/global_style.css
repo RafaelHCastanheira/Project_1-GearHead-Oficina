@@ -1,7 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Adicione variáveis CSS */
+:root {
+    --cor-primaria: #272d3e;
+    --cor-secundaria: #F2CEA2;
+    --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --radius: 8px;
+}
+
 /* ===== ESTILOS GERAIS ===== */
 body {
     font-family: "Roboto", sans-serif;
-    background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+    background: linear-gradient(to bottom right, var(--cor-primaria), var(--cor-secundaria));
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -13,10 +25,8 @@ body {
 
 /* ===== CABEÇALHO ===== */
 header {
-    background-color: #272d3e;
+    background-color: var(--cor-primaria);
     /* Define a cor de fundo do cabeçalho */
-    padding: 2px 0;
-    /* Adiciona espaçamento vertical ao cabeçalho */
     position: sticky;
     /* Mantém o cabeçalho fixo no topo ao rolar a página */
     top: 0;
@@ -69,6 +79,8 @@ nav {
     /* Define o espaçamento entre os itens */
     padding: 0 30px;
     /* Define padding laterais */
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
 }
 
 .nav-links li {
@@ -78,15 +90,9 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    /* Remove o sublinhado dos links */
     color: white;
-    /* Define a cor do texto dos links */
     padding: 10px 15px;
-    /* Adiciona espaçamento interno aos links */
-    border-radius: 5px;
-    /* Adiciona bordas arredondadas */
-    transition: background-color 0.3s;
-    /* Suaviza a transição ao mudar a cor de fundo */
+    border-radius: var(--radius);
 }
 
 .nav-links a:hover {
@@ -105,22 +111,53 @@ nav {
     /* Muda o cursor para indicar que é clicável */
 }
 
+.menu-toggle[aria-expanded="true"] {
+    color: #fff;
+}
 /* ===== CONTATO ===== */
-.contato-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.btn-wpp{
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+
 }
 
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    margin: 40px auto;
+}
+.item{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 250px;
+}
+
+.title-map{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 5px;
+    margin-bottom: 30px;
+    gap: 25px;
+}
+
+iframe{
+    width: 100%;
+    height: 350px; 
+    border:0; 
+    border-radius:10px;
+}
 
 /* ===== SEÇÕES ===== */
 section {
     padding: 60px 20px 10px 20px;
-    /* Adiciona espaçamento interno nas seções */
     text-align: center;
-    /* Centraliza o conteúdo */
     min-height: 20vh;
-    /* Define a altura mínima de cada seção */
     max-height: 100vh;
 }
 
@@ -128,6 +165,7 @@ section h3 {
     display: flex;
     justify-content: center;
     font-size: 28px;
+    color: #fff;
 }
 
 section p {
@@ -148,15 +186,14 @@ section p {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); /* Novo gradiente de fundo */
 }
 
 #titulo-inicio {
     font-size: 4rem;
     color: #F2CEA2;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.85);
-    z-index: 1;
     text-align: center;
+    padding: 38px;
 }
 
 #inicio::before {
@@ -170,8 +207,8 @@ section p {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.65; /* Opacidade da imagem */
-    z-index: 0;
+    z-index: -1;
+    opacity: .6;
 }
 
 #inicio p {
@@ -183,11 +220,6 @@ section p {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     line-height: 1.6;
-}
-
-/* Menu mobile aberto */
-body.menu-open {
-    overflow: hidden;
 }
 
 /* ===== CORROSSEL ===== */
@@ -237,11 +269,15 @@ body.menu-open {
     /* Não redimensiona */
     width: 250px;
     height: 200px;
+    position: relative;
+    aspect-ratio: 16/9;
 }
 
 .img-slide img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    
+    object-position: center;
     object-fit: cover;
     /* Mantém proporção da imagem */
     border-radius: 10px;
@@ -264,10 +300,11 @@ body.menu-open {
     top: 50%;
     transform: translateY(-50%);
     padding: 16px;
-    background: #fff;
+    background: #dededebd;
     color: #000;
     border: none;
     cursor: pointer;
+    border-radius: 80px;
 }
 
 .prev {
@@ -295,8 +332,8 @@ body.menu-open {
 }
 
 .ponto {
-    width: 24px;
-    height: 6px;
+    width: 20px;
+    height: 10px;
     background: #333;
     opacity: 0.5;
     transition: all 0.3s ease;
@@ -310,21 +347,16 @@ body.menu-open {
 /* Melhorias de acessibilidade */
 .ponto:focus {
     outline: 2px solid #fff;
-    outline-offset: 2px;
+    outline-offset: 1px;
 }
 
 /* ===== RODAPÉ ===== */
 footer {
     background-color: #272d3e;
-    /* Define a cor de fundo do rodapé */
     color: #f2cea2c4;
-    /* Define a cor do texto */
     text-align: center;
-    /* Centraliza o texto */
     padding: 5px;
-    /* Adiciona espaçamento interno */
-    margin-top: 5px;
-    /* Mantém o rodapé na parte inferior da página */
+    margin-top: 20%;
 }
 
 footer p {

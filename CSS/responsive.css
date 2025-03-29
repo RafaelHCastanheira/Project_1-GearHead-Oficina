@@ -10,25 +10,15 @@
 
     .nav-links {
         display: none;
-        /* Oculta os links de navegação por padrão */
         flex-direction: column;
-        /* Organiza os links em coluna */
-        width: 100%;
-        /* Ocupa toda a largura */
+        height: auto;
         text-align: left;
-        /* Alinha os links à esquerda */
         background: #41485ae3;
-        /* Define a cor de fundo */
         padding: 10px;
-        /* Adiciona espaçamento interno */
-        margin-top: 31px;
+        margin-top: 22px;
         position: absolute;
-        /* Permite sobrepor outros elementos */
         left: 0;
-        /* Alinha os links à esquerda */
         top: 60px;
-        /* Define a posição abaixo do cabeçalho */
-        transform: translateX(-100%);
     }
 
     .nav-links.active {
@@ -112,11 +102,12 @@
         font-size: 1.5rem;
     }
 
-    .nav-links {
-        top: 50px;
-    }
-
     section {
         padding: 2rem 1rem;
     }
+}
+
+/* Menu mobile aberto */
+body.menu-open {
+    overflow: hidden;
 }
