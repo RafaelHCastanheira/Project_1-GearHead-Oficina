@@ -36,7 +36,7 @@
         </nav>
     </header>
 
-    <main>
+    <main role="main" aria-label="Conteúdo principal">
         <section id="inicio" aria-labelledby="titulo-inicio">
             <div class="text-container">
                 <h2 id="titulo-inicio" class="sr-only">Bem-vindo <br> GearHead Oficina</h2>
@@ -51,7 +51,7 @@
         <section id="servicos" aria-labelledby="titulo-servicos">
             <h3 id="titulo-servicos">Serviços</h3>
 
-            <div class="carousel" role="region" aria-live="polite" aria-label="Carrossel de serviços">
+            <div class="carousel" role="region" aria-label="Serviços oferecidos" aria-roledescription="carrossel">
                 <div class="slide active">
                     <h4>Troca de óleo e filtros</h4>
                     <div class="cont-slide">
@@ -168,31 +168,34 @@
 
             <div class="contato">
                 <div class="item">
-                    <img src="./Img/Icones/Phone.png">
-                    <p>(11) 9999-9999</p>
+                    <img src="./Img/Icones/Phone.png" alt="Ícone de telefone">
+                    <p><a href="tel:+551199999999" target="_blank">(11) 9999-9999</a></p>
                 </div>
                 <div class="item">
-                    <img src="./Img/Icones/Mail.png">
-                    <p>contato@oficina.com.br</p>
+                    <img src="./Img/Icones/Mail.png" alt="Ícone de e-mail">
+                    <p><a href="mail:contato@oficina.com.br" target="_blank">contato@oficina.com.br</a></p>
                 </div>
                 <div class="item">
-                    <img src="./Img/Icones/Calendar.png">
-                    <p>Seg-Sex: 08h às 17h</p>
+                    <img src="./Img/Icones/Calendar.png" alt="Ícone de calendario com relógio">
+                    <p>Segunda a Sexta: 08h às 17h</p>
                 </div>
+            </div>
+            <div class="mapa">
+                <div class="title-map">
+                    <img src="./Img/Icones/Local.png">
+                    <h3 id="titulo-faleconosco"> Onde estamos situados </h3>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7352.274967416005!2d-48.451654060492714!3d-22.87137913175146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c72084fe897cb3%3A0x1b04151597c2912a!2sVila%20dos%20Lavradores%2C%20Botucatu%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1742831214139!5m2!1spt-BR!2sbr"
+                    width="100%" height="350px" border:0; border-radius:10px;allowfullscreen=""
+                    sandbox="allow-scripts allow-same-origin" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    aria-label="Mapa da localização da oficina">
+                </iframe>
             </div>
         </section>
-        <div class="mapa">
-            <div class="title-map">
-                <img src="./Img/Icones/Local.png">
-                <h3 id="titulo-faleconosco"> Onde estamos situados </h3>
-            </div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7352.274967416005!2d-48.451654060492714!3d-22.87137913175146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c72084fe897cb3%3A0x1b04151597c2912a!2sVila%20dos%20Lavradores%2C%20Botucatu%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1742831214139!5m2!1spt-BR!2sbr"
-                width="100%" height="350px" border:0; border-radius:10px;allowfullscreen="" sandbox="allow-scripts allow-same-origin" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" aria-label="Mapa da localização da oficina">
-            </iframe>
-        </div>
-        <a class="btn-wpp" href="https://wa.me/551199999999" target="_blank"><img src="./Img/Icones/Icon-wpp1.png" width="100px"></a>
+        
+        <a class="btn-wpp" href="https://wa.me/551199999999" target="_blank"><img src="./Img/Icones/Icon-wpp.png"
+                width="100px"></a>
     </main>
 
     <footer>
