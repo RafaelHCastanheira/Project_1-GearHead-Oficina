@@ -22,12 +22,14 @@
     --z-carrossel-controles: 300;
     --z-modal: 500;
     --z-wpp-button: 999;
+    
     /* 📏 Espaçamentos padrão (opcional, para usar consistentemente) */
     --spacing-xs: 4px;
     --spacing-sm: 8px;
     --spacing-md: 16px;
     --spacing-lg: 24px;
     --spacing-xl: 32px;
+    
     /* 🧪 Extras se quiser adicionar dark mode futuramente:  */
  /* --bg-light: #fff;  */
 /*  --bg-dark: #121212;  */
@@ -314,7 +316,7 @@ section p {
     border: none;
     cursor: pointer;
     border-radius: 80px;
-    z-index: var(--z-carrosel-controles);
+    z-index: var(--z-carrossel-controles);
 }
 
 .prev {
