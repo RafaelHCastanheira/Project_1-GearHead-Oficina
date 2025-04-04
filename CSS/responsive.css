@@ -17,6 +17,7 @@
         padding: 10px;
         margin-top: 22px;
         position: absolute;
+        z-index: var(--z-menu-mobile);
         left: 0;
         top: 60px;
     }
