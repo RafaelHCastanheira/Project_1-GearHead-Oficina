@@ -158,7 +158,7 @@
         </section>
 
         <section id="sobre" aria-labelledby="titulo-sobre">
-            <h3 id="titulo-sobre">Sobre nós</h3>
+            <h3>Sobre nós</h3>
             <p>Há mais de 15 anos oferecendo serviços mecânicos de qualidade.<br> Nossa equipe certificada utiliza
                 equipamentos de última geração para garantir o melhor desempenho do seu veículo.</p>
         </section>
@@ -183,18 +183,20 @@
             <div class="mapa">
                 <div class="title-map">
                     <img src="./Img/Icones/Local.png">
-                    <h3 id="titulo-faleconosco"> Onde estamos situados </h3>
+                    <h3 id="localização"> Onde estamos situados </h3>
                 </div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7352.274967416005!2d-48.451654060492714!3d-22.87137913175146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c72084fe897cb3%3A0x1b04151597c2912a!2sVila%20dos%20Lavradores%2C%20Botucatu%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1742831214139!5m2!1spt-BR!2sbr"
-                    width="100%" height="350px" style="border:0; border-radius:10px;" sandbox="allow-scripts allow-same-origin" 
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen aria-label="Mapa da localização da oficina">
+                    width="100%" height="350px" style="border:0; border-radius:10px;"
+                    sandbox="allow-scripts allow-same-origin" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen aria-label="Mapa da localização da oficina">
                 </iframe>
             </div>
         </section>
-
-        <a class="btn-wpp" href="https://wa.me/551199999999" target="_blank"><img src="./Img/Icones/Icon-wpp.png"
-                width="100px"></a>
+        <div class="wpp-wrapper">
+            <a class="btn-wpp" href="https://wa.me/551199999999" target="_blank"><img src="./Img/Icones/Icon-wpp.png"
+                    width="100px"></a>
+        </div>
     </main>
 
     <footer>
@@ -243,6 +245,23 @@
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && document.body.classList.contains('menu-open')) {
                 toggleMenu();
+            }
+        });
+
+        window.addEventListener('scroll', () => {
+            const footer = document.querySelector('footer');
+            const btnWpp = document.querySelector('.btn-wpp');
+            const footerRect = footer.getBoundingClientRect();
+
+            const alturaTela = window.innerHeight;
+            const limiteAltura = alturaTela;
+            const limiteFixo = window.innerWidth <= 768 ?1000 : 600;
+            const limite = Math.min(limiteAltura, limiteFixo);
+
+            if (footerRect.top < limite) {
+                btnWpp.classList.add('stop');
+            } else {
+                btnWpp.classList.remove('stop');
             }
         });
     </script>
